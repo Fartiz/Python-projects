@@ -27,12 +27,12 @@ def success_func():
     l = login.get()
     p = pas.get()
     if len(l) > 0 and l.replace(" ", ""):
-        messagebox.showinfo(title="Успешный Вход!", message="Ваши данные были украдены и проданы!")
+        messagebox.showinfo(title="Успешный Вход!", message="Вы вошли в свой аккаунт")
     else:
         messagebox.showinfo(title="Отказано", message="неправильный логин или пароль")
 def er_fuc():
     window.destroy()
-    messagebox.showinfo(title="Успешный Выход!", message="Неприятность")
+    messagebox.showinfo(title="Успешный Выход!", message="Программа закрыта")
 
 b_s = tkinter.Button(text="Вход", command=success_func)
 b_s.place(x=200, y=140)
